@@ -1,9 +1,12 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Cabecalho } from "./componentes/cabecalho/cabecalho";
+import { Rodape } from "./componentes/rodape/rodape";
+import { ListaLivros } from "./componentes/lista-livros/lista-livros";
 
+// AQUI FOI IMPORTADO MEU COMPONENTE
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Cabecalho, Rodape, ListaLivros],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
